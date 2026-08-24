@@ -1,0 +1,276 @@
+/* ================================
+   CONTACT SECTION - LIGHT MODE
+================================ */
+
+.contact-section {
+  padding: 100px 10%;
+  background: #ffffff;
+  color: #111827;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-heading h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.contact-heading p {
+  font-size: 18px;
+  color: #5f6b7a;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-info h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.contact-info > p {
+  color: #5f6b7a;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.contact-email {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-email strong {
+  font-size: 18px;
+  color: #111827;
+}
+
+.contact-email a {
+  color: #8b2cff;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.contact-email a:hover {
+  text-decoration: underline;
+}
+
+.contact-note {
+  margin-top: 30px;
+  padding: 20px;
+  border-left: 3px solid #8b2cff;
+  background: #f5f5f7;
+  border-radius: 0 8px 8px 0;
+}
+
+.contact-note p {
+  margin: 0;
+  color: #5f6b7a;
+  line-height: 1.6;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 12px;
+  background: #f7f8fa;
+  border: 1px solid #e1e4e8;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  border: 1px solid #d5d9df;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #8b2cff;
+  box-shadow: 0 0 0 3px rgba(139, 44, 255, 0.12);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #8a929e;
+}
+
+.contact-submit {
+  margin-top: 5px;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #8b2cff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.contact-submit:hover {
+  transform: translateY(-2px);
+}
+
+.contact-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.contact-status {
+  margin: 5px 0 0;
+  text-align: center;
+  color: #5f6b7a;
+  line-height: 1.5;
+}
+
+
+/* ================================
+   CONTACT SECTION - DARK MODE
+================================ */
+
+.dark-mode .contact-section {
+  background: #0b0f14;
+  color: #ffffff;
+}
+
+.dark-mode .contact-heading h1 {
+  color: #ffffff;
+}
+
+.dark-mode .contact-heading p {
+  color: #b8bec8;
+}
+
+.dark-mode .contact-info h2 {
+  color: #ffffff;
+}
+
+.dark-mode .contact-info > p {
+  color: #b8bec8;
+}
+
+.dark-mode .contact-email strong {
+  color: #ffffff;
+}
+
+.dark-mode .contact-email a {
+  color: #b84cff;
+}
+
+.dark-mode .contact-note {
+  background: rgba(255, 255, 255, 0.04);
+  border-left-color: #b84cff;
+}
+
+.dark-mode .contact-note p {
+  color: #b8bec8;
+}
+
+.dark-mode .contact-form {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+}
+
+.dark-mode .form-group label {
+  color: #ffffff;
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group textarea {
+  border-color: #343a46;
+  background: #11161d;
+  color: #ffffff;
+}
+
+.dark-mode .form-group input:focus,
+.dark-mode .form-group textarea:focus {
+  border-color: #b84cff;
+  box-shadow: 0 0 0 3px rgba(184, 76, 255, 0.12);
+}
+
+.dark-mode .form-group input::placeholder,
+.dark-mode .form-group textarea::placeholder {
+  color: #777f8c;
+}
+
+.dark-mode .contact-status {
+  color: #b8bec8;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 70px 6%;
+  }
+
+  .contact-heading h1 {
+    font-size: 34px;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-form {
+    padding: 22px;
+  }
+}
