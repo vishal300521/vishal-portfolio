@@ -1,0 +1,22 @@
+.highlights-container { padding: 5% 10%; }
+.section-heading { margin-bottom: 36px; }
+.section-heading h1 { margin: 4px 0 0; }
+.eyebrow { color: #9f7aea; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.08em; margin: 0; text-transform: uppercase; }
+.highlights-grid { display: grid; gap: 24px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.highlight-card { background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; box-sizing: border-box; min-height: 230px; padding: 28px; }
+.highlight-icon { color: #9f7aea; font-size: 2rem !important; }
+.highlight-card h2 { margin: 14px 0 18px; }
+.highlight-card h3 { font-size: 1.05rem; margin: 0 0 4px; }
+.highlight-card p { line-height: 1.6; margin: 0; }
+.detail-list { border-left: 3px solid #5000ca; padding-left: 14px; }
+.detail-list p, .empty-state { opacity: 0.82; }
+.profile-links { display: flex; flex-direction: column; gap: 12px; }
+.profile-links a, .resume-button { align-items: center; border: 1px solid rgba(159, 122, 234, 0.7); border-radius: 7px; display: inline-flex; font: inherit; gap: 9px; padding: 10px 14px; width: fit-content; }
+.profile-links a:hover, .resume-button:hover { background: #5000ca; border-color: #5000ca; color: white; }
+.resume-card { display: flex; flex-direction: column; }
+.resume-button { background: transparent; color: white; cursor: pointer; margin-top: auto; }
+.light-mode .highlight-card { background: white; border-color: rgba(0, 0, 0, 0.1); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05); }
+.light-mode .resume-button { color: #0d1116; }
+.light-mode .profile-links a:hover, .light-mode .resume-button:hover { color: white; }
+@media print { .navbar-fixed-top, footer, .social_icons, .mobile_social_icons, .resume-button { display: none !important; } .main-container, .highlight-card { background: white !important; color: black !important; } p, a, h1, h2, h3, h4, h5 { color: black !important; } }
+@media screen and (max-width: 700px) { .highlights-container { padding: 10% 5%; } .highlights-grid { grid-template-columns: 1fr; } }
